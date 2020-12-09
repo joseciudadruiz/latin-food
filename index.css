@@ -112,7 +112,7 @@ hr {
   margin-left: auto;
   margin-right: auto;
   display: block;
-  height: 300px;
+  height: auto;
 }
 #our-story {
   width: 50%;
@@ -124,15 +124,25 @@ hr {
   color: rgb(31, 122, 31);
 }
 /* media screen */
-@media (max-width: 786px) {
+@media only screen and (max-width: 800px) {
   #items {
     display: none;
   }
   .hero {
-    font-size: 35px;
+    font-size: 30px;
+  }
+  .row.inline {
+    display: flex;
+    flex-direction: column;
+  }
+  #logo-story {
+    width: auto;
+  }
+  #our-story {
+    width: auto;
   }
 }
-@media (min-width: 787px) {
+@media only screen and (min-width: 801px) {
   #small-screen {
     display: none;
   }
