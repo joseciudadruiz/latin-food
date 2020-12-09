@@ -27,7 +27,7 @@ a {
   float: left;
   padding-right: 1em;
   font-size: 25px;
-  color: rgb(31, 122, 31);
+  color: rgb(82, 121, 111);
 
 }
 #logo {
@@ -40,7 +40,7 @@ a {
 .toggle {
   background: transparent;
   border-radius: 50%;
-  border-color: rgba(41, 163, 41, 0.4);
+  border-color: rgba(82, 121, 111, 0.4);
   margin-top: 15px;
   margin-left: auto;
   margin-right: auto;
@@ -50,7 +50,7 @@ a {
   margin-left: auto;
   margin-right: auto;
   text-align: center;
-  background-color: rgba(31, 122, 31, 0.7);
+  background-color: rgba(82, 121, 111, 0.6);
   width: 50%;
   height: auto;
 }
@@ -61,7 +61,7 @@ a {
 .second-block {
   float: right;
   padding-right: 50px;
-  color: rgb(255, 255, 179);
+  color: rgb(240, 239, 235);
   font-size: 25px;
 }
 /* hero */
@@ -75,21 +75,21 @@ a {
 .hero {
   padding-top: 150px;
   font-size: 40px;
-  color: rgb(255, 255, 153);
+  color: rgb(240, 239, 235);
 }
 
 hr {
   margin-top: -1px;
-  background-color: rgb(41, 163, 41);
+  background-color: rgba(82, 121, 111, 0.5);
   border: 5px;
-  height: 5px;
+  height: 3px;
 }
 #food {
-  color: rgb(31, 122, 31);
+  color: rgb(82, 121, 111);
 }
 /* about-us */
 .about-us {
-  background: rgb(255, 255, 153);
+  background: rgb(240, 239, 235);
   height: auto;
   margin-top: -30px;
 }
@@ -97,7 +97,7 @@ hr {
   padding-top: 25px;
   text-align: center;
   font-size: 35px;
-  color: rgb(31, 122, 31);
+  color: rgb(82, 121, 111);
 }
 .inline {
   width: 100%;
@@ -121,7 +121,7 @@ hr {
   text-align: center;
   padding-left: 25px;
   padding-right: 25px;
-  color: rgb(31, 122, 31);
+  color: rgb(82, 121, 111);
 }
 /* media screen */
 @media only screen and (max-width: 800px) {
