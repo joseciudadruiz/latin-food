@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="index.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Courgette&display=swap" rel="stylesheet">
+    <title>Latin Street Food/Art</title>
+  </head>
+  <body>
+
+    <div class="container">
+      <div class="nav">
+        <nav id="items">
+          <ul class="nav-item">
+            <a href="#" class="first-block"><img id="logo" src="./images/little.png"></a>
+            <a href="#" class="first-block">Home</a>
+            <a href="#" class="first-block">Contact Us</a>
+            <a href="#" class="second-block">Gallery</a>
+          </ul>
+        </nav>
+        <!-- nav for small screens -->
+        <nav id="small-screen">
+          <ul class="nav-item-small">
+            <button onclick="toggled()" class="toggle" id="submenu"><img id="logo-small" src="./images/little.png"></button>
+            <div id="toggled">
+              <a href="#" class="toggle">Home</a>
+              <a href="#" class="toggle">Contact Us</a>
+              <a href="#" class="toggle">Gallery</a>
+            </div>
+          </ul>
+        </nav>
+      </div>
+      <!-- ------Hero------------------------- -->
+      <div class="col-md-8">
+        <div class="hero">
+          <div class="row">
+            <h1>Latin Corner <span id="food"></span></h1>
+          </div>
+        </div>
+      </div>
+      <hr>
+      <!-- ---------------------------- -->
+      <section class="about-us">
+        <div class="row">
+          <div>
+            <h2 id="about">About Us</h2>
+          </div>
+        </div>
+        <div class="row inline">
+          <div id="logo-story">
+            <img src="./images/little.png">
+          </div>
+          <div id="our-story">
+            <h3>Lorem Ipsum</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          </div>
+        </div>
+      </section>
+      <hr>
+    </div>
+
+    <script src="index.js"></script>
+  </body>
+</html>

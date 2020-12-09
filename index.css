@@ -1,0 +1,139 @@
+body {
+  font-family: 'Courgette', cursive;
+  padding: 0;
+  margin: 0;
+}
+/* navigation */
+.nav {
+  position: absolute;
+  z-index: 1;
+  width: 100%;
+}
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+.sticky + .hero {
+  padding-top: 60px;
+}
+a {
+  list-style: none;
+  display: inline-block;
+  text-decoration: none;
+  padding-top: 20px;
+}
+.first-block {
+  float: left;
+  padding-right: 1em;
+  font-size: 25px;
+  color: rgb(31, 122, 31);
+
+}
+#logo {
+  height: 90px;
+  margin-top: -30px;
+}
+#logo-small {
+  height: 100px;
+}
+.toggle {
+  background: transparent;
+  border-radius: 50%;
+  border-color: rgba(41, 163, 41, 0.4);
+  margin-top: 15px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+#toggled {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  background-color: rgba(31, 122, 31, 0.7);
+  width: 50%;
+  height: auto;
+}
+#toggled > a {
+  color: white;
+  font-size: 25px;
+}
+.second-block {
+  float: right;
+  padding-right: 50px;
+  color: rgb(255, 255, 179);
+  font-size: 25px;
+}
+/* hero */
+.col-md-8 {
+  height: 500px;
+  text-align: center;
+  background: url("./images/barb.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.hero {
+  padding-top: 150px;
+  font-size: 40px;
+  color: rgb(255, 255, 153);
+}
+
+hr {
+  margin-top: -1px;
+  background-color: rgb(41, 163, 41);
+  border: 5px;
+  height: 5px;
+}
+#food {
+  color: rgb(31, 122, 31);
+}
+/* about-us */
+.about-us {
+  background: rgb(255, 255, 153);
+  height: auto;
+  margin-top: -30px;
+}
+#about {
+  padding-top: 25px;
+  text-align: center;
+  font-size: 35px;
+  color: rgb(31, 122, 31);
+}
+.inline {
+  width: 100%;
+  height: auto;
+  display: flex;
+  margin-top: -10px;
+}
+#logo-story {
+  width: 50%;
+}
+#logo-story > img {
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  height: 300px;
+}
+#our-story {
+  width: 50%;
+}
+#our-story > h3, p {
+  text-align: center;
+  padding-left: 25px;
+  padding-right: 25px;
+  color: rgb(31, 122, 31);
+}
+/* media screen */
+@media (max-width: 786px) {
+  #items {
+    display: none;
+  }
+  .hero {
+    font-size: 35px;
+  }
+}
+@media (min-width: 787px) {
+  #small-screen {
+    display: none;
+  }
+}
