@@ -1,7 +1,9 @@
 body {
   font-family: 'Courgette', cursive;
-  padding: 0;
+  padding:0;
   margin: 0;
+  background: rgb(240, 239, 235);
+
 }
 /* navigation */
 .nav {
@@ -9,13 +11,13 @@ body {
   z-index: 1;
   width: 100%;
 }
-.sticky {
-  position: fixed;
-  top: 0;
-  width: 100%;
+.nav-item {
+  padding-left: 50px;
+  padding-right: 50px;
+  font-size: 25px;
 }
-.sticky + .hero {
-  padding-top: 60px;
+.nav-item > a:hover {
+  color: white;
 }
 a {
   list-style: none;
@@ -26,25 +28,46 @@ a {
 .first-block {
   float: left;
   padding-right: 1em;
-  font-size: 25px;
   color: rgb(82, 121, 111);
-
+}
+.second-block {
+  float: right;
+  color: rgb(82, 121, 111);
+}
+#english-flag {
+  height: 5px;
+  padding-right: 1rem;
+}
+#english-flag:hover {
+  -ms-transform: scale(1.5);
+  -webkit-transform: scale(1.5);
+  transform: scale(1.5);
 }
 #logo {
   height: 90px;
   margin-top: -30px;
 }
+#logo:hover {
+  -ms-transform: scale(1.5);
+  -webkit-transform: scale(1.5);
+  transform: scale(1.5);
+}
 #logo-small {
-  height: 100px;
+  height: 70px;
 }
 .toggle {
   background: transparent;
   border-radius: 50%;
   border-color: rgba(82, 121, 111, 0.4);
-  margin-top: 15px;
+  margin-top: 40px;
   margin-left: auto;
   margin-right: auto;
   display: block;
+}
+.toggle:hover {
+  -ms-transform: scale(1.5);
+  -webkit-transform: scale(1.5);
+  transform: scale(1.5);
 }
 #toggled {
   margin-left: auto;
@@ -56,19 +79,25 @@ a {
 }
 #toggled > a {
   color: white;
-  font-size: 25px;
+  font-size: 23px;
 }
-.second-block {
-  float: right;
-  padding-right: 50px;
-  color: rgb(240, 239, 235);
-  font-size: 25px;
+#toggled > a:hover {
+  color: rgb(82, 121, 111);
 }
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+.sticky + .hero {
+  padding-top: 60px;
+}
+
 /* hero */
 .col-md-8 {
   height: 500px;
   text-align: center;
-  background: url("./images/barb.jpg");
+  background: url("./images/empanada.jpeg");
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -92,12 +121,17 @@ hr {
   background: rgb(240, 239, 235);
   height: auto;
   margin-top: -30px;
+  padding-left: 30px;
+  padding-right: 30px;
 }
 #about {
   padding-top: 25px;
   text-align: center;
   font-size: 35px;
   color: rgb(82, 121, 111);
+}
+#about:hover {
+  color: white;
 }
 .inline {
   width: 100%;
@@ -123,7 +157,39 @@ hr {
   padding-right: 25px;
   color: rgb(82, 121, 111);
 }
+/* Gallery */
+#gallery > div > div > h2 {
+  text-align: center;
+  font-size: 35px;
+  color: rgb(82, 121, 111);
+}
+#gallery > div > div > h2:hover {
+  color: white;
+}
+.gallery-img {
+  width: 33%;
+  display: inline-block;
+  height: auto;
+  margin-bottom: 3rem;
+}
+.gallery-img > img {
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
 /* media screen */
+@media only screen and (max-width:1080px) {
+  .gallery-img > img {
+    content: url("https://via.placeholder.com/300")
+  }
+}
+@media only screen and (max-width: 980px) {
+  .gallery-img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 3rem;
+  }
+}
 @media only screen and (max-width: 800px) {
   #items {
     display: none;
@@ -142,6 +208,7 @@ hr {
     width: auto;
   }
 }
+
 @media only screen and (min-width: 801px) {
   #small-screen {
     display: none;
